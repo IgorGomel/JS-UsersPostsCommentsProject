@@ -1,0 +1,166 @@
+.body {
+    background-color:paleturquoise;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.users {
+    display: flex;
+    width: fit-content;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 15px;
+    border-right: none;    
+    margin: auto;
+}
+
+thead  {
+    text-align: center;        
+    font-weight: bold;
+    font-size: 25px;
+    background-color: #9370DB;
+}
+
+thead td {
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: black;
+}
+
+tbody {
+    background: #D8E6F3;
+}
+
+tbody td:first-child {
+    background: #AFCDE7;
+    color: white;
+    padding: 10px 10px;
+}
+
+tbody td:last-child {
+    background-color:paleturquoise;
+    border: none;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+tbody td {
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: black;
+
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.btnInfoUser {
+    background-color: #00FF7F;
+    color: #6A5ACD;
+    border:none;  
+    border-radius: 10px; 
+    padding: 1vh 5vh 1vh 5vh;
+    font-size: 17px;
+  }
+
+.btnInfoUser:hover {
+	color: #fff;
+	background-color: #00FF00;
+}  
+
+.modal-wrap {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.modal-window {
+    position: absolute; 
+    border-radius: 2vh;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    background-color:darkgreen;
+    color:floralwhite;    
+    padding: 2vh 3vh 2vh 3vh;
+    display: none;
+}
+
+.modal-wrap--visible {
+    visibility: visible;
+    transition: all 0.3s ease-in-out;
+}
+
+.modal-window--visible {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/********************стилізація modal-window***********************/
+.nameUser {
+    width: 90%;
+    margin-top: 2px; 
+    padding: 2px 7px 2px 2px;
+    color:chartreuse;
+}
+
+.Company {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    color:chartreuse;
+}
+
+.nameCompany {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    color:chartreuse;
+    padding: 1vh 0vh 1vh 2vh;
+    border: 2px, solid, greenyellow;
+}
+
+.catchPhraseCompany {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    color:chartreuse;
+    border: 2px, solid, greenyellow;
+    padding: 1vh 0vh 1vh 2vh;
+}
+
+.bsCompany {
+    margin-top: 2px;
+    color:chartreuse;
+    border: 2px, solid, greenyellow;
+    padding: 1vh 0vh 1vh 2vh;
+}
+
+.btnClose {
+    position:absolute;
+    top: 1vh;
+    right: 1vh;
+    margin: 1vh;
+    width: 4vh;
+    height: 4vh;
+    background-image: url('../Images/close.png');
+    background-size: contain;
+}
+/*******************************************************************/

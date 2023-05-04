@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<link rel='stylesheet' type='text/css' href='styleNewPost.css' />
+	<title>New Post</title>
+</head>
+
+<body class="body">
+	<div class="container">
+        <div class="content">
+            <h1 class="title">New Post</h1>
+            
+            <div class="user">
+                <div class="itemUser"> 
+                    <label class="labelUser" for="selectUser">Select the user:</label>
+                    <select class="selectUser" name="selectUser" id="selectUser"></select>
+                </div>
+                
+                <div class="itemUser">
+                    <label class="labelUserId" for="userId">userId:</label>
+                    <input class="userId" name="userId" id="userId">
+                </div>
+            </div>
+            
+            <div class="post">                
+                <div class="itemPost">
+                    <label class="labelTitle" for="titlePost">Title:</label>
+                    <input class="titlePost" name="titlePost" id="titlePost">
+                </div>
+                <div class="itemPost">
+                    <label class="labelBody" for="bodyPost">Body:</label>
+                    <textarea class="bodyPost" name="bodyPost" id="bodyPost"></textarea>
+                </div>
+            </div>
+
+            <button class="btnCreatePost" id="btnCreatePost" data-clicks="0">Create new post</button>
+
+        </div>
+		
+	</div>
+	<script type="module" src="newPost.js"></script>
+</body>
+</html>
